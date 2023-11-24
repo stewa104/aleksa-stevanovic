@@ -7,6 +7,18 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+  .grow img{
+transition: 1s ease;
+}
+
+.grow img:hover{
+-webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
+}
+</style>
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -47,8 +59,8 @@
         <div class="row">
             <div class="col">
               <h3 class="text-center">O meni</h3>
-              <div class="align-items-center" style="margin-left: 33%;">
-              <img  src="images.jpg" class="rounded-circle m-3 center" style="margin-left: 50% ;" width="200" height="200"></div>
+              <div class="align-items-center grow " style="margin-left: 33%;">
+              <img  src="images.jpg" class="rounded-circle m-3 center " style="margin-left: 50% ;" width="200" height="200"></div>
               <h5 class="text-center" >Aleksa Stevanovic</h5>
               <p>Ja sam Aleksa i imam 17 godina, rodjen sam 28. februara 2006. godine, i ucim programiranje u Prvoj kragujevackoj gimnaziji. Volim da igram igrice, treniram, gledam anime i druzim se sa drustvom </p>
             </div>
@@ -77,7 +89,7 @@
     <h2>Moji Hobiji</h2>
     <div class="row">
       <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card">
+        <div class="card grow ">
           <img src="game.jpg" class="card-img-top" alt="gaming" width="500" height="300">
           <div class="card-body">
             <h5 class="card-title">Gaming</h5>
@@ -86,7 +98,7 @@
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card">
+        <div class="card grow">
           <img src="gym.jpg" class="card-img-top" alt="gaming" width="500" height="300">
           <div class="card-body">
             <h5 class="card-title">Teretana</h5>
@@ -95,7 +107,7 @@
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card">
+        <div class="card grow">
           <img src="anime.jpg" class="card-img-top" alt="gaming" width="500" height="300">
           <div class="card-body">
             <h5 class="card-title">Anime</h5>
