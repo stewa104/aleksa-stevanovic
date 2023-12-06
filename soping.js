@@ -1,13 +1,15 @@
 function renderShoppingItem(item) {
     return `
+    <div class="row">
       <div class="col-md-4 mb-4">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body" >
             <h5 class="card-title">${item.naziv}</h5>
             <p class="card-text">Komada: <span class="item-quantity">${item.komada}</span></p>
             <button class="btn btn-primary decrease-btn">Smanji komad</button>
           </div>
         </div>
+      </div>
       </div>
     `;
   }
